@@ -1,0 +1,345 @@
+<html>
+
+<head>
+    <title>CGPA calculation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="icon" href="img/cgpa.png" type="image/png">
+
+    <link rel="stylesheet" href="aos.css" type="text/css">
+    <script src="aos.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+
+
+    <meta name="description" content="Calculate CGPA">
+    <meta name="author" content="Santhosh">
+    <meta property="og:image" content="https://raw.githubusercontent.com/santhoshkumarvgds/CGPA-3sem/master/img/cgpa.png?raw=true">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="620">
+
+    <script src="sem3.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+    <div class="head">
+        <div data-aos="flip-left" data-aos-duration="1000">
+            <img src="img/collegeLogo.png" width="85px;">
+            <h4>K.S.R. College of Engineering</h4>
+            <h3 id="color">CGPA-Calculation <span id="span">Sem - III</span></h3>
+            <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">
+                <sa>- Santhoshkumarvgds</sa>
+            </div>
+        </div>
+    </div><br>
+    <div class="container">
+        <h3 id="name"></h3><br>
+           <div class="cen">
+            <select id="selectBox" onclick="sa();">
+                <option onclick="one();">Sem - I</option>
+                <option>Sem - II</option>
+                <option selected="selected">Sem - III</option>
+                <option>Sem - IV</option>
+                <option>Sem - V</option>
+                <option>Sem - VI</option>
+                <option>Sem - VII</option>
+                <option>Sem - VIII</option>
+              </select>
+        </div>
+        <div id="result">
+            <form>
+
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <input id="nct" type="text" name="sub1" placeholder="NCT"><br>
+                        <input id="mm" name="sub2" type="text" placeholder="MM">
+                        <input id="ds" name="sub3" type="text" placeholder="DS">
+                        <input id="se" name="sub4" type="text" placeholder="SE">
+                        <input id="ca" name="sub5" type="text" placeholder="CA">
+                    </div>
+                    <div class="col-md-4">
+                        <input id="oops" name="sub6" type="text" placeholder="OOPS">
+
+                        <input id="mmlab" name="sub7" type="text" placeholder="MM Lab">
+                        <input id="dslab" name="sub8" type="text" placeholder="DS Lab">
+                        <input id="oopslab" name="sub9" type="text" placeholder="OOPS Lab">
+                    </div>
+                   
+                </div>
+
+
+            </form>
+
+            <br><br>
+            <div class="in">
+            <in onclick="s()">Submit <i class="fa fa-share-square"></i></in>
+            </div><br><br>
+        </div>
+    </div>
+    <p id="answer"></p>
+    <br><br>
+    <div class="footer">
+        <div class="img">
+            <img src="img/sa.jpeg" width="125%">
+        </div>
+        <div class="contact">
+            <h2>Santhoshkumarvgds</h2>
+            <a href="mailto:santhoshkumar@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://github.com/santhoshkumarvgds" target="_blank"><i class="fab fa-github"></i></a>
+            <a href=""><i class="fab fa-facebook-f" target="_blank"></i></a>
+            <a href="https://www.instagram.com/santhoshkumarvgds/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/santhos13690662" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-apple" target="_blank"></i></a>
+
+        </div>
+
+       
+    </div>
+    <div class="count" style="text-align: center;background-color:rgba(0, 0, 0, 0.12);padding: 0px 0px 20px 0px;">
+ <img src="http://www.cutercounter.com/hit.php?id=19449&nd=6&style=28" border="0" alt="hit counter">
+    </div>
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="smoth.js"></script>
+
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        ! function() {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function(e) {
+                        return function() {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function(e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function(t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('p4fuzxzp8pck');
+    </script>
+    <!-- End of Async Drift Code -->
+
+
+    <script>
+        (function() {
+            var link,
+                toggleScrollToTopLink = function() {
+
+                    if ($("body").scrollTop() > 0 || $("html").scrollTop() > 0) {
+                        link.fadeIn(7000000000000);
+                    } else {
+                        link.fadeOut(700000000000);
+                    }
+                };
+
+            $(document).ready(function() {
+
+                link = $(".scrltp");
+                $(window).scroll(toggleScrollToTopLink);
+                toggleScrollToTopLink();
+            });
+
+        })();
+    </script>
+        <!---start control + any key & shift + any key block--->
+    <script>
+        document.onkeydown = function(e) {
+            if (e.ctrlKey || e.shiftkey ||
+                (e.keyCode === 85)) {
+                return false;
+            }
+        };
+        <!--block right click-->
+        document.getElementsByTagName("html")[0].setAttribute("oncontextmenu", "return false"); 
+    </script>
+    <!---end  block--->
+    <script>
+        document.getElementsByTagName("span").innerHTML = "New text!";
+    </script>
+    <script>
+        var name = prompt("Enter your name");
+        while (name === "") {
+            name = prompt("Enter your name");
+        }
+        document.getElementById("name").innerHTML = "Hi " + name + "....!!!";
+    </script>
+    <script>
+        document.getElementById("answer").style.display = "none";
+
+        function s() {
+            document.getElementById("result").style.display = "none";
+            document.getElementById("answer").style.display = "block";
+            sem();
+        }
+    </script>
+    <script>
+        function sa() {
+            document.getElementById("answer").style.display = "none";
+            document.getElementById('dslab').style.display = "block";
+                document.getElementById('oopslab').style.display = "block";
+            document.getElementById('ca').style.display = "block";
+            document.getElementById("ds").style.display = "block";
+            document.getElementById('se').style.display = "block";
+            
+            document.getElementById("dslab").style.textAlign= "center";
+                document.getElementById('oopslab').style.display = "block";
+            document.getElementById('ca').style.display = "block";
+            document.getElementById("ds").style.display = "block";
+            document.getElementById('se').style.display = "block";
+            document.getElementById("result").style.display = "block";
+            var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+            document.getElementById("span").innerHTML = selectedValue;
+            if (selectedValue == "Sem - I") {
+
+                document.getElementsByName('sub1')[0].placeholder = 'Maths 1';
+              
+                document.getElementsByName('sub2')[0].placeholder = 'TE 1';
+                document.getElementsByName('sub3')[0].placeholder = 'Physics ';
+                document.getElementsByName('sub4')[0].placeholder = 'Chemistry ';
+                document.getElementsByName('sub5')[0].placeholder = 'BCME';
+                document.getElementsByName('sub6')[0].placeholder = 'PST';
+                document.getElementsByName('sub7')[0].placeholder = 'Phy & Che Lab - NOT';
+                document.getElementsByName('sub8')[0].placeholder = 'PST Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'EG Lab';
+
+            } else if (selectedValue == "Sem - II") {
+                document.getElementsByName('sub1')[0].placeholder = 'Maths 2';
+                document.getElementsByName('sub2')[0].placeholder = 'TE 2';
+                document.getElementsByName('sub3')[0].placeholder = 'Physics ';
+                document.getElementsByName('sub4')[0].placeholder = 'EVS';
+                document.getElementsByName('sub5')[0].placeholder = 'LDDC';
+                document.getElementsByName('sub6')[0].placeholder = 'CP';
+                document.getElementsByName('sub7')[0].placeholder = 'Phy & Che Lab';
+                document.getElementsByName('sub8')[0].placeholder = 'LDDC Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'CP Lab';
+
+            } else if (selectedValue == "Sem - III") {
+                document.getElementsByName('sub1')[0].placeholder = 'NCT';
+                document.getElementsByName('sub2')[0].placeholder = 'MM';
+                document.getElementsByName('sub3')[0].placeholder = 'DS';
+                document.getElementsByName('sub4')[0].placeholder = 'SE';
+                document.getElementsByName('sub5')[0].placeholder = 'CA';
+                document.getElementsByName('sub6')[0].placeholder = 'OOPS';
+                document.getElementsByName('sub7')[0].placeholder = 'MM Lab';
+                document.getElementsByName('sub8')[0].placeholder = 'DS Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'OOPS Lab';
+
+            } else if (selectedValue == "Sem - IV") {
+                document.getElementsByName('sub1')[0].placeholder = 'DMS';
+                document.getElementsByName('sub2')[0].placeholder = 'PDM';
+                document.getElementsByName('sub3')[0].placeholder = 'JP';
+                document.getElementsByName('sub4')[0].placeholder = 'OS';
+                document.getElementsByName('sub5')[0].placeholder = 'TC';
+                document.getElementsByName('sub6')[0].placeholder = 'DAA';
+                document.getElementsByName('sub7')[0].placeholder = 'DMS Lab';
+                document.getElementsByName('sub8')[0].placeholder = 'JP Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'OS Lab';
+
+            } else if (selectedValue == "Sem - V") {
+                document.getElementsByName('sub1')[0].placeholder = 'PCD';
+                document.getElementsByName('sub2')[0].placeholder = 'CG';
+                document.getElementsByName('sub3')[0].placeholder = 'OST';
+                document.getElementsByName('sub4')[0].placeholder = 'WP';
+                document.getElementsByName('sub5')[0].placeholder = 'CN';
+                document.getElementsByName('sub6')[0].placeholder = 'PE 1';
+                document.getElementsByName('sub7')[0].placeholder = 'OS & WP Lab';
+                document.getElementsByName('sub8')[0].placeholder = 'CN Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'G&M Lab';
+
+            } else if (selectedValue == "Sem - VI") {
+                document.getElementsByName('sub1')[0].placeholder = 'NFT';
+                document.getElementsByName('sub2')[0].placeholder = 'AI & ES';
+                document.getElementsByName('sub3')[0].placeholder = 'CI & S';
+                document.getElementsByName('sub4')[0].placeholder = 'BD & A';
+                document.getElementsByName('sub5')[0].placeholder = 'PE 2';
+                document.getElementsByName('sub6')[0].placeholder = 'OE 1';
+                document.getElementsByName('sub7')[0].placeholder = 'NFT Lab';
+                document.getElementsByName('sub8')[0].placeholder = 'C & BD Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'M PROJECT';
+
+            } else if (selectedValue == "Sem - VII") {
+                document.getElementsByName('sub1')[0].placeholder = 'PE';
+                document.getElementsByName('sub2')[0].placeholder = 'MP';
+                document.getElementsByName('sub3')[0].placeholder = 'ST';
+                document.getElementsByName('sub4')[0].placeholder = 'C & NS';
+                document.getElementsByName('sub5')[0].placeholder = 'PE 3';
+                document.getElementsByName('sub6')[0].placeholder = 'OE 2';
+                document.getElementsByName('sub7')[0].placeholder = 'ST Lab';
+                document.getElementsByName('sub8')[0].placeholder = 'NS Lab';
+                document.getElementsByName('sub9')[0].placeholder = 'MAD Lab';
+
+            } else if (selectedValue == "Sem - VIII") {
+                document.getElementsByName('sub1')[0].placeholder = 'ED';
+                document.getElementsByName('sub2')[0].placeholder = 'PE 4';
+                document.getElementById("ds").style.display = "none";
+                document.getElementById('se').style.display = "none";
+                document.getElementById('ca').style.display = "none";
+                document.getElementsByName('sub6')[0].placeholder = 'PE 5';
+                document.getElementsByName('sub7')[0].placeholder = 'PW';
+                document.getElementById('dslab').style.display = "none";
+                document.getElementById('oopslab').style.display = "none";
+            }
+
+        }
+    </script>
+    <script src="sem3.js" type="text/javascript"></script>
+</body>
+
+
+<!--<script>
+        var sub_arr = [];
+            var sub_arr=document.getElementById("nct").value;
+        function ans(){
+           //var sub_arr = [];
+            var sub_arr=document.getElementById("nct").value;
+            /*var a[1]=document.getElementById("mm").value;
+            var a[2]=document.getElementById("ds").value;
+            var a[3]=document.getElementById("se").value;
+            var a[4]=document.getElementById("ca").value;
+            var a[5]=document.getElementById("oops").value;
+            var a[6]=document.getElementById("mmlab").value;
+            var a[7]=document.getElementById("oopslab").value;
+            var a[8]=document.getElementById("dslab").value;
+            for(i=0;i<9;i++){
+                switch(a[i]){
+                    case 'O': a[i]=10;
+                            break;
+                    case 'A+': a[i]=9;
+                            break;
+                    case 'A': a[i]=8;
+                            break;
+                    case 'B+': a[i]=7;
+                            break;
+                    case 'B': a[i]=6;
+                            break;
+                }
+            }*/
+            document.getElementById("name").innerHTML=sub_arr;
+        }
+    
+    </script>-->
+
+</html>
