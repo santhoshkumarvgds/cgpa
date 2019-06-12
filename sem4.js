@@ -393,5 +393,5 @@ function sem4(){
     }
     var total = mul1 + mul2 + mul3 + mul4 + mul5 + mul6 + mul7 + mul8 + mul9;   
     var div = (total / 26);
-    document.getElementById("answer").innerHTML = name +" sgpa is : " + Math.floor(div * 100) / 100 );
+    document.getElementById("answer").innerHTML = name " sgpa is : " + div;
 }
